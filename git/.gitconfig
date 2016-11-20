@@ -1,0 +1,43 @@
+[user]
+  name = name
+  email = mail
+[merge]
+  tool = meld
+
+[difftool]
+  prompt = false
+
+[diff]	
+  tool = meld
+  guitool = meld
+
+[difftool "meld"]
+  path = /usr/bin/meld 
+
+[core]
+  editor = vi
+  pager = less
+  excludesfile = ~/.gitignore
+
+[alias]
+  st = status
+  ci = commit
+  amend = commit --amend
+  lg = log --graph --decorate --pretty
+  lga = log --graph --decorate --pretty --all
+  reset =  reset --soft HEAD^
+  commreset = reset --hard HEAD^
+  change = diff --name-status
+  dic = diff --cached
+  diffst = diff --stat
+  conf = config -l
+  start = commit --allow-empty
+	
+[push]
+  default = simple
+ 
+[color]
+  branch = auto
+  diff = auto
+  interactivie = auto
+  status = auto
